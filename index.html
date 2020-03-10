@@ -11,17 +11,19 @@
   <script src='./log.js'></script>
   <script src='./init.js'></script>
 
-  <script src='./views/list.js'></script>
 </head>
 
 <body>
   <section id='user-interface'>
-    <input id='input' type='text' /><br>
-    <button id='save-button'>save</button>
+    <form>
+      <input id='input' type='text' name='newString' />
+      <input id='save-button' type='button' value='save' /> <br>
+    </form>
     <hr>
     <button id='evens-button'>evens</button>
     <button id='odds-button'>odds</button>
     <button id='nany-button'>NaNy</button>
+    <br>
     <div id='selected'></div>
     <hr>
     <button id='reset-button'>reset</button>
@@ -32,7 +34,6 @@
   <script src='./interactions/display-evens.js'></script>
   <script src='./interactions/display-odds.js'></script>
   <script src='./interactions/display-nany.js'></script>
-  <script src='./interactions/display-all.js'></script>
   <script src='./interactions/reset.js'></script>
 </body>
 
