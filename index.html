@@ -15,25 +15,26 @@
 
 <body>
   <section id='user-interface'>
+    <select id="active-array-selection">
+      <option value="evens">evens</option>
+      <option value="odds">odds</option>
+      <option value="nany">nany</option>
+    </select>
+    <hr>
     <form>
       <input id='input' type='text' name='newString' />
       <input id='save-button' type='button' value='save' /> <br>
     </form>
     <hr>
-    <button id='evens-button'>evens</button>
-    <button id='odds-button'>odds</button>
-    <button id='nany-button'>NaNy</button>
-    <br>
+    <h3>active list</h3>
     <div id='selected'></div>
     <hr>
     <button id='reset-button'>reset</button>
   </section>
 
 
-  <script src='./interactions/save.js'></script>
-  <script src='./interactions/display-evens.js'></script>
-  <script src='./interactions/display-odds.js'></script>
-  <script src='./interactions/display-nany.js'></script>
+  <script src='./interactions/add-string.js'></script>
+  <script src='./interactions/set-active.js'></script>
   <script src='./interactions/reset.js'></script>
 </body>
 
