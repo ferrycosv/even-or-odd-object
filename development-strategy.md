@@ -4,18 +4,18 @@ Building this site one step at a time
 
 ## 0. Setup
 
-> * index.html: basic layout and references to external files
-> * style.css: css style attributes of the HTML elements
+> * `index.html`: basic layout and references to external files
+> * `style.css`: css style attributes of the HTML elements
 
 ## 1. Data & Log
 
 > * `string-sorter.js` and `log.js`
-> * create the main object to store the state and behavior of the webpage 
+> * Create the main object to store the state and behavior of the webpage.
 
 ## 2. Init
 
-> * which files of code do you need to change?
-> * what are you changing in them?
+> * `init.js` and `string-sorter.js`
+> * Create the renderActiveList function inside the `stringSorter` object to display the list on screen with the initial values when the page finish to load.
 
 ## 3. User Story: Set Active
 
