@@ -9,8 +9,8 @@ Building this site one step at a time
 
 ## 1. Data & Log
 
-> * which files of code do you need to create/change?
-> * what are you changing in each file?
+> * `string-sorter.js` and `log.js`
+> * create the main object to store the state and behavior of the webpage 
 
 ## 2. Init
 
