@@ -5,13 +5,40 @@ const stringSorter = {
     odds: ['1', '3'],
     nany: ['x', 'y'],
   },
-  setActive: function (newActive) {
-    // set the new active array
+  setActive: function (newActiveEvent) {
+    this.state.active = newActiveEvent.target.value;
   },
   addString: function (newString) {
-    // add the new string to the correct array
+    if(isNaN(newString)){
+      this.state.nany.push(newString);
+    }else {
+      if(Number(newString) % 2 === 0){
+        this.state.evens.push(Number(newString));
+      }else{
+        this.state.odds.push(Number(newString))
+      }
+    }
+    console.log(this.state);
   },
   renderActiveList: function () {
-    // return the active array rendered to a list
+
+    const display = document.getElementById("selected");
+    if(this.state.active === "evens"){
+      display.innerHTML = this.state.evens.map(x=> x + "<br>").join("");
+    } else if( this.state.active === "odds"){
+      display.innerHTML = this.state.odds.map(x=> x + "<br>").join("");
+    }else if( this.state.active === "nany"){
+      display.innerHTML = this.state.nany.map(x=> x + "<br>").join("");
+    }
+  },
+
+  reset : function(){
+    console.log("reset")
+    this.state.active =  'events';
+    this.state.evens = [];
+    this.state.odds = [];
+    this.state.nany = [];
+    this.renderActiveList();
+   
   }
 }

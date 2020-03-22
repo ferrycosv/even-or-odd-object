@@ -1,16 +1,16 @@
-# Even-or-odd-object: development strategy
+# Numbery or NaNy: development strategy
 
 Building this site one step at a time
 
 ## 0. Setup
 
-> * index.html: basic layout and references to external files
-> * style.css: css style attributes of the HTML elements
+> * What files do you need to create?
+> * What are you putting in each file?
 
 ## 1. Data & Log
 
-> * `string-sorter.js` and `log.js`
-> * create the main object to store the state and behavior of the webpage 
+> * which files of code do you need to create/change?
+> * what are you changing in each file?
 
 ## 2. Init
 
