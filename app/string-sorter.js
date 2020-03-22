@@ -1,10 +1,11 @@
 const stringSorter = {
   state: {
-    active: 'evens',
-    evens: ['2', '4'],
-    odds: ['1', '3'],
-    nany: ['x', 'y'],
+    active: "evens",
+    evens: ["2", "4"],
+    odds: ["1", "3"],
+    nany: ["x", "y"]
   },
+
   setActive: function (newActiveEvent) {
     this.state.active = newActiveEvent.target.value;
   },
@@ -39,4 +40,4 @@ const stringSorter = {
     this.renderActiveList();
    
   }
-}
+};
