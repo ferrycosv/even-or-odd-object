@@ -1,6 +1,5 @@
 
 document.getElementById("save-button")
-        .addEventListener('click', (event) => {
-            console.log("executed")
+        .addEventListener('click', () => {
             stringSorter.addString(document.getElementById('input').value)
     });

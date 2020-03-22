@@ -18,10 +18,9 @@ const stringSorter = {
         this.state.odds.push(Number(newString))
       }
     }
-    console.log(this.state);
+    this.renderActiveList();
   },
   renderActiveList: function () {
-
     const display = document.getElementById("selected");
     if(this.state.active === "evens"){
       display.innerHTML = this.state.evens.map(x=> x + "<br>").join("");
@@ -33,8 +32,7 @@ const stringSorter = {
   },
 
   reset : function(){
-    console.log("reset")
-    this.state.active =  'events';
+    this.state.active =  'evens';
     this.state.evens = [];
     this.state.odds = [];
     this.state.nany = [];
