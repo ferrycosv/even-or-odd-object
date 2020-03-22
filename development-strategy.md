@@ -1,11 +1,11 @@
-# Numbery or NaNy: development strategy
+# Even-or-odd-object: development strategy
 
 Building this site one step at a time
 
 ## 0. Setup
 
-> * What files do you need to create?
-> * What are you putting in each file?
+> * index.html: basic layout and references to external files
+> * style.css: css style attributes of the HTML elements
 
 ## 1. Data & Log
 

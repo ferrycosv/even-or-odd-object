@@ -1,0 +1,44 @@
+body {
+  background-color: #f7f7f7;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 30px;
+  color: #58b792;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  font-family: monospace;
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  padding-bottom: 7px;
+}
+
+#reset-button {
+  font-family: monospace;
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+select {
+  font-family: monospace;
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
